@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#B3FFFFFF"
+        app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imagePet"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+                android:id="@+id/textNamePet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="@string/title_name_pet"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imagePet"
+                app:layout_constraintStart_toEndOf="@+id/imagePet"
+                app:layout_constraintTop_toTopOf="@+id/imagePet" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        <LinearLayout
+                android:id="@+id/llQrCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/glCenter"
+                app:layout_constraintTop_toBottomOf="@id/imagePet">
+
+            <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/qr_code"
+                    tools:layout_editor_absoluteX="137dp"
+                    tools:layout_editor_absoluteY="30dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_qrcode"
+                    android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/llVaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/glCenter"
+                app:layout_constraintTop_toBottomOf="@+id/imagePet">
+
+            <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/vaccine"
+                    tools:layout_editor_absoluteX="246dp"
+                    tools:layout_editor_absoluteY="129dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_card"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="285dp"
+                    tools:layout_editor_absoluteY="131dp" />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C7C7C7"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

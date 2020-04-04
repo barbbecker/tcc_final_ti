@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.TelaCadastroActivity"
+        tools:showIn="@layout/activity_tela_cadastro">
+
+    <ImageView
+            android:id="@+id/fundo_pet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/banner_fundo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutChip"
+            style="@style/TextInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBreed">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textNumberChip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_chip"
+                android:inputType="number"
+                android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutName"
+            style="@style/TextInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPet">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textNamePet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:hint="@string/title_name_pet"
+                android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutBreed"
+            style="@style/TextInputLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBirthDate">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textBreed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:hint="@string/title_breed"
+                android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutBirthDate"
+            style="@style/TextInputLayout"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayoutBreed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutName">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="@string/title_birthday"
+                android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewPet"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

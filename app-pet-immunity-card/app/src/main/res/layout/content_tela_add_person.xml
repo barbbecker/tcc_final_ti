@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.TelaAddPerson"
+        tools:showIn="@layout/activity_tela_add_person">
+
+    <ImageView
+            android:id="@+id/fundo_person"
+            android:layout_width="406dp"
+            android:layout_height="608dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/banner_fundo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_name"
+                android:singleLine="true"
+                android:inputType="textCapSentences"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout8"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_phone"
+                android:inputType="number"
+                android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout7"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_number"
+                android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_address"
+                android:singleLine="true"
+                android:inputType="textCapSentences"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout8">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputCpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_cpf"
+                android:inputType="number"
+                android:singleLine="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout9">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_password"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Pet Immunity Card</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tela_vaccine">Vacinas</string>
+    <string name="title_activity_tela_inicial">Meus Animais</string>
+    <string name="title_activity_tela_cadastro">Cadastro de Animal</string>
+    <string name="title_activity_tela_add_vaccine">Cadastro de Vacinas</string>
+    <string name="title_activity_tela_qr_code">Qr Code</string>
+    <string name="title_activity_tela_register_person">Cadastro Pessoa</string>
+    <string name="title_activity_tela_add_person">Cadastro Pessoa</string>
+
+    <string name="login_email">Email</string>
+    <string name="login_sign_up">Entrar</string>
+    <string name="login_register">Cadastrar</string>
+    <string name="login_password">Senha</string>
+
+    <string name="title_name">Nome</string>
+    <string name="title_address">Endereço</string>
+    <string name="title_number">Número</string>
+    <string name="title_phone">Telefone</string>
+    <string name="title_cpf">CPF</string>
+    <string name="title_email">Email</string>
+    <string name="title_password">Senha</string>
+    <string name="title_vaccine_name">Nome da Vacina</string>
+    <string name="title_date_app">Data da aplicação</string>
+    <string name="title_date_reapp">Data da reaplicação</string>
+    <string name="title_veterinary">Veterinário</string>
+
+    <string name="title_name_pet">Nome do animal</string>
+    <string name="title_birthday">Data de aniversário</string>
+    <string name="title_breed">Raça</string>
+    <string name="title_chip">Número do chip</string>
+
+    <string name="title_card">Carteirinha</string>
+    <string name="title_qrcode">Qr Code</string>
+
+    <string name="save_name_person">Preencha seu nome!</string>
+    <string name="save_address_person">Preencha seu endereço!</string>
+    <string name="save_number_address_person">Preencha o número do seu endereço!</string>
+    <string name="save_phone_person">Preencha o seu telefone!</string>
+    <string name="save_cpf_person">Preencha o CPF corretamente!</string>
+    <string name="save_email_person">Preencha seu email!</string>
+    <string name="save_password_person">Preencha com uma senha válida!</string>
+
+    <string name="error_register_person">Erro ao cadastrar pessoa!</string>
+    <string name="error_register_vaccine">Erro ao cadastrar vacina!</string>
+    <string name="error_register_pet">Erro ao cadastrar o animal!</string>
+    <string name="error_get_pets">Erro ao buscar os animais!</string>
+    <string name="error_get_vaccines">Erro ao buscar as vacinas!</string>
+    <string name="error_invalid_user">Usuário ou senha inválidos!</string>
+    <string name="error_unexpected_error">Ocorreu um erro inesperado!</string>
+
+    <string name="process_image">Imagem processada com sucesso!</string>
+    <string name="not_process_image">A imagem não pôde ser processada! Tente novamente!</string>
+    <string name="gallery">Galeria</string>
+    <string name="upload">Envio da imagem completo!</string>
+    <string name="permission_camera">Sem permissão para acessar a camera!</string>
+
+    <string name="save_name_vaccine">Preencha o nome da Vacina!</string>
+    <string name="save_name_vet">Preencha o nome do Veterinário!</string>
+    <string name="save_date_app">Preencha a data de aplicação!</string>
+    <string name="save_date_reapp">Preencha a data esperada da reaplicação</string>
+
+    <string name="save_name_pet">Preencha o nome do animal!</string>
+    <string name="save_breed_pet">Preencha a raça do animal!</string>
+    <string name="save_birthday">Preencha a data de nascimento do animal!</string>
+    <string name="save_chip">Preencha o número do chip do animal!</string>
+
+    <string name="invalid_email">Preencha com um email válido!</string>
+    <string name="invalid_password">Preencha com uma senha válida!</string>
+
+</resources>
