@@ -1,0 +1,12 @@
+---
+- name: move file
+  copy:
+    src: /home/ubuntu/gradlew.service
+    dest: /etc/systemd/system/gradlew.service
+    # remote_src: yes
+
+- name: enable a service for start
+  systemd:
+    name: gradlew
+    state: started
+    enabled: yes

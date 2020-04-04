@@ -1,0 +1,14 @@
+[Unit]
+Description=API Pet Immunity Card
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=root
+ExecStart=/home/ubuntu/init.sh
+WorkingDirectory=/home/ubuntu
+
+[Install]
+WantedBy=multi-user.target
